@@ -44,3 +44,7 @@ using git bash inside the target folder:
 
 7. Passing a value to a view from controller:
     pages controller/ index()
+
+8. Handling css & bootstrap:
+    https://laravel.com/docs/6.x/mix#plain-css
+
