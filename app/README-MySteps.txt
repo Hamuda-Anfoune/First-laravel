@@ -51,3 +51,9 @@ using git bash inside the target folder:
 9. Istalled Node.js to get npm which comes with it,
     npm is used to manage stylesheets
     source: https://laravel.com/docs/6.x/mix#plain-css
+
+10. Adding bootstrap:
+    run command:    npm install bootstrap
+    Add:            @import "node_modules/bootstrap/scss/bootstrap.scss"; to: resources/sass/app.scss
+    run command:    npm run dev
+    Add:            <link rel="stylesheet" href="/css/app.css"> to: views OR template
