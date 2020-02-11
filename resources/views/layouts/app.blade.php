@@ -19,7 +19,10 @@
 
     </head>
     <body>
-        @yield('content')   <!-- DIFINE DIFFERNT CONTENT SECTIONS IN DIFFERENT VIEWS TO SHOW! -->
-        @yield('happy')     <!-- CAN HAVE MORE THAN ONE YIELDS -->
+        @include('inc.navbar')
+        <div class="container">
+            @yield('content')   <!-- DIFINE DIFFERNT CONTENT SECTIONS IN DIFFERENT VIEWS TO SHOW! -->
+            @yield('happy')     <!-- CAN HAVE MORE THAN ONE YIELDS -->
+        </div>
     </body>
 </html>

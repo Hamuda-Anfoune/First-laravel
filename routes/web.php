@@ -51,5 +51,4 @@ Route::get('/user/{id}/{name}',function($id, $name){
     return 'ID for user '.$name.' is: '.$id;
 });
 
-
-
+Route::resource('posts', 'PostsController'); // Automatically creates needed routes
