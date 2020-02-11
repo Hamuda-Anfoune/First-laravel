@@ -48,3 +48,6 @@ using git bash inside the target folder:
 8. Handling css & bootstrap:
     https://laravel.com/docs/6.x/mix#plain-css
 
+9. Istalled Node.js to get npm which comes with it,
+    npm is used to manage stylesheets
+    source: https://laravel.com/docs/6.x/mix#plain-css
