@@ -11,7 +11,6 @@ using git bash inside the target folder:
 2.Creating a virtual host that will only show the content of public instead of all project files:
     a.Edit:   C:\wamp64\bin\apache\apache2.4.39\conf\extra\httpd-vhosts.conf
       Add:
-
             <VirtualHost *:80>
                 # public in the project: lsapp
                 DocumentRoot "${INSTALL_DIR}/www/laravelFromScratch/lsapp/public"
