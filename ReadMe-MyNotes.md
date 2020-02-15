@@ -4,11 +4,11 @@ Project based on tutorial:
 
 *********************************************************
 
-1.Creating a laraval project:
+1. Creating a laraval project:
 using git bash inside the target folder:
     $ composer create-project laraval/laravel {project_name}
 
-2.Creating a virtual host that will only show the content of public instead of all project files:
+2. Creating a virtual host that will only show the content of public instead of all project files:
     a.Edit:   C:\wamp64\bin\apache\apache2.4.39\conf\extra\httpd-vhosts.conf
       Add:
             <VirtualHost *:80>
@@ -29,7 +29,7 @@ using git bash inside the target folder:
             # I commented out the original content and localhost still works
 
 
-3.Creating a new controller: using Artisan is better:
+3. Creating a new controller: using Artisan is better:
     $ php artisan make:controller PagesController --resource
       --respurce: creates functions within the controller, e.g. create, store, delete..
 
@@ -103,7 +103,7 @@ using git bash inside the target folder:
     Refresh also:       php artisan migrate:refresh --path=/database/migrations/fileName.php
     Source:             https://stackoverflow.com/a/55456271/11904017
 
-17. Work wirh Tinker:
+17. Work with Tinker:
     php artisan tinker
 
     17.1: creating an instance of a model:
@@ -120,4 +120,15 @@ using git bash inside the target folder:
         $post->title = 'title';
 
 
-18.
+18. Pagination: tutorial 6 at 7:00 or so:
+    Location:   PostsController / index()
+
+19. laravelCollective.com:
+    handles forms
+    Installed from composer
+
+20. Form validation: tutorial part 7 @ 8:00
+    Location:   PostsController@store
+                .inc/messages: added the messages and conditions
+                target page: include
+    How:        $this->validate();
