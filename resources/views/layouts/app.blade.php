@@ -25,5 +25,6 @@
             @yield('content')           <!-- DIFINE DIFFERNT CONTENT SECTIONS IN DIFFERENT VIEWS TO SHOW! -->
             @yield('happy')             <!-- CAN HAVE MORE THAN ONE YIELDS -->
         </div>
+
     </body>
 </html>

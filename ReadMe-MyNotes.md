@@ -132,3 +132,9 @@ using git bash inside the target folder:
                 .inc/messages: added the messages and conditions
                 target page: include
     How:        $this->validate();
+
+21. Adding ckeditor, To handle editing the posts:
+    Source: https://ckeditor.com/docs/ckeditor4/latest/guide/dev_package_managers.html#composer
+    How:    $ composer require ckeditor/ckeditor
+            Added scripts in app.blade.php
+            DELETED IT DUW TO NOT WORKING AND WASTING TIME!!

@@ -21,6 +21,11 @@
           <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
+      <ul class="navbar-nav ml-auto">
+          <li>
+              <a href="/posts/create">Add Post</a>
+          </li>
+      </ul>
     </div>
 </nav>
 <br>

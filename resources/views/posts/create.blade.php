@@ -15,8 +15,9 @@
             {!! Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title']) !!}
         </div>
         <div class="form-group">
-            {!! Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Post Body']) !!}
+            {!! Form::textarea('body', '', ['id' => 'editor1', 'class' => 'form-control', 'placeholder' => 'Post Body']) !!}
         </div>
         {!! Form::submit('submit', ['class' => 'btn btn-primary']) !!}
+
     {!! Form::close() !!}
 @endsection
