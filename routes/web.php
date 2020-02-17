@@ -52,3 +52,7 @@ Route::get('/user/{id}/{name}',function($id, $name){
 });
 
 Route::resource('posts', 'PostsController'); // Automatically maps routes to functions in PostsController
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

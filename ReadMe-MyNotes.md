@@ -142,3 +142,13 @@ using git bash inside the target folder:
 22. posts.update: uses PUT|PATCH actions:
     We use a hidden form element to change POST to PUT
     Location: edit.blade.php
+
+23. Enabling authentication:
+    How:    run:    $ composer require laravel/ui
+                    $ php artisan ui vue --auth
+            follow on instructions:
+                    $ npm install
+                    $ npm run dev
+            Migrate user models to DB following point 16 above
+
+24.
