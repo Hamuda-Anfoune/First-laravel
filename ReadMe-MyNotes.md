@@ -138,3 +138,7 @@ using git bash inside the target folder:
     How:    $ composer require ckeditor/ckeditor
             Added scripts in app.blade.php
             DELETED IT DUW TO NOT WORKING AND WASTING TIME!!
+
+22. posts.update: uses PUT|PATCH actions:
+    We use a hidden form element to change POST to PUT
+    Location: edit.blade.php
