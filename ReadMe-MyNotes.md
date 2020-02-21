@@ -150,5 +150,6 @@ using git bash inside the target folder:
                     $ npm install
                     $ npm run dev
             Migrate user models to DB following point 16 above
+    Source: https://laravel.com/docs/6.x/authentication
 
 24.
