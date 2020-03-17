@@ -8,6 +8,15 @@ use DB;
 
 class PostsController extends Controller
 {
+    public function email(request $request){
+        $email = $request->input('email');
+        $shortEmail = substr($email, 0, strpos($email, "@"));// use shortening formula here!
+
+        // Both of below work
+        // return $shortEmail;
+        return view("pages.email")->with('shortEmail',$shortEmail);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -143,4 +152,5 @@ class PostsController extends Controller
 
         return redirect('/posts')->with('success', 'Post Removed');
     }
+
 }

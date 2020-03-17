@@ -9,7 +9,7 @@ class PagesController extends Controller
     public function index(){
         $title = 'WELCOME TO THE JUNGLE, BABY!';
         //return view ('pages.index', compact('title'));    // Method 1: passing the value of title to the view
-        return view ('pages.index')->with('title', $title); // Method 2: 'title': passed name, $title: passed value,  works well with arrays!
+        return view ('pages.index')->with('title', $title); // Method 2: 'title': passed name, $title: passed value,  works as well with arrays!
     }
 
     public function about(){

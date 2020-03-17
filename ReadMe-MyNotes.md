@@ -1,5 +1,5 @@
 
-Project based on tutorial:
+## Project based on tutorial:
     https://www.youtube.com/watch?v=H3uRXvwXz1o
 
 *********************************************************
@@ -9,9 +9,13 @@ using git bash inside the target folder:
     $ composer create-project laraval/laravel {project_name}
 
 2. Creating a virtual host that will only show the content of public instead of all project files:
-    a.Edit:   C:\wamp64\bin\apache\apache2.4.39\conf\extra\httpd-vhosts.conf
+
+    CAN HAVE MORE THEN ONE VHOST IN SAME IP
+
+    * Edit:   C:\wamp64\bin\apache\apache2.4.39\conf\extra\httpd-vhosts.conf
       Add:
             <VirtualHost *:80>
+                # lsapp: vhost name
                 # public in the project: lsapp
                 DocumentRoot "${INSTALL_DIR}/www/laravelFromScratch/lsapp/public"
                 # server name can be anything
@@ -19,7 +23,22 @@ using git bash inside the target folder:
                 ServerAlias lsapp.local
             </VirtualHost>
 
-    b.Edit: C:\Windows\System32\drivers\etc\host
+      Example for outside of wamp64/www:
+            <VirtualHost *:80>
+                # allocationTool.lo: vhost name
+                # public in the project: allocationTool
+                DocumentRoot "D:/Repos/UoLFinal/code/trunk/allocationTool/public"
+                # server name can be anything
+                ServerName allocationTool.lo
+                ServerAlias allocationTool.lo
+                <Directory "D:/Repos/UoLFinal/code/trunk/allocationTool/public">
+                    Options +Indexes +FollowSymLinks +MultiViews
+                    AllowOverride All
+                    require all granted
+                </Directory>
+            </VirtualHost>
+
+    * Edit: C:\Windows\System32\drivers\etc\host
       How:  As administrator, Using notepad
       Add:
 
@@ -31,7 +50,7 @@ using git bash inside the target folder:
 
 3. Creating a new controller: using Artisan is better:
     $ php artisan make:controller PagesController --resource
-      --respurce: creates functions within the controller, e.g. create, store, delete..
+      --resource: creates functions within the controller, e.g. create, store, delete..
 
 4. Change app name in .env:
     APP_NAME={new app name}
@@ -152,4 +171,8 @@ using git bash inside the target folder:
             Migrate user models to DB following point 16 above
     Source: https://laravel.com/docs/6.x/authentication
 
-24.
+24. Removing a part of a string after a specific character or chraracters:
+    $variable = substr($variable, 0, strpos($variable, "By"));
+    https://stackoverflow.com/a/2588683/11904017
+
+25. 

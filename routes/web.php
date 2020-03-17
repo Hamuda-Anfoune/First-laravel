@@ -40,6 +40,8 @@ Route::get('/about',function(){
 // ABOUT PAGE THE RIGHT WAY
 Route::get('/about', 'PagesController@about');
 
+// ABOUT PAGE THE RIGHT WAY
+Route::post('/email', 'PostsController@email');
 
 // SERVICES PAGE THE RIGHT WAY
 Route::get('/services', 'PagesController@services');
