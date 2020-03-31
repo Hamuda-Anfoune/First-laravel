@@ -18,7 +18,7 @@ class newUser extends Authenticatable // replaced Model with Authenticatable
      * @var array
      */
     protected $fillable = [
-        'user_id', 'name', 'account_type_no', 'password',
+        'user_id', 'name', 'account_type_id', 'password',
     ];
 
     /**

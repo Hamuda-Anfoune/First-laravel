@@ -49,8 +49,9 @@ using git bash inside the target folder:
 
 
 3. Creating a new controller: using Artisan is better:
-    $ php artisan make:controller PagesController --resource
+    $ php artisan make:controller (name of subfolder)/PagesController --resource
       --resource: creates functions within the controller, e.g. create, store, delete..
+      name of subfolder: if need to create it in a subfolder
 
 4. Change app name in .env:
     APP_NAME={new app name}
@@ -175,4 +176,6 @@ using git bash inside the target folder:
     $variable = substr($variable, 0, strpos($variable, "By"));
     https://stackoverflow.com/a/2588683/11904017
 
-25. 
+25. Return to previous view with old data:
+    How:    return Redirect::back()->withInput(Input::all());
+    source: https://stackoverflow.com/a/31081645/11904017
